@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="FF"/>
+  <test name="Sanity in GC(failed)" parallel="tests" preserve-order="false">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="abc.LinksDemo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="links"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

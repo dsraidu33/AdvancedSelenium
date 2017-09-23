@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My test suite">
+  <test name="Group Test Demo">
+  <groups>
+      <run>
+         <include name="G1"/>
+         <include name="G2"/>
+            
+      </run>
+    </groups>
+    <classes>
+       <class name="abc.GroupTest1"/>
+       <class name="abc.GroupTest2"/>
+    </classes>
+  </test>
+</suite>

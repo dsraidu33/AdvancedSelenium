@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="GC"/>
+  <listeners>
+    <listener class-name="abc.RetryListner"/>
+    <listener class-name="abc.ExtentReporterNG"/>
+  </listeners>
+  <test name="In GC(failed)" parallel="tests">
+    <parameter name="browser" value="GC"/>
+    <classes>
+      <class name="abc.LinksDemo">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="links"/>
+        </methods>
+      </class> <!-- abc.LinksDemo -->
+      <class name="abc.AutocompleteDemo">
+        <methods>
+          <include name="autocomplete"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- abc.AutocompleteDemo -->
+    </classes>
+  </test> <!-- In GC(failed) -->
+  <test name="Sanity(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="abc.LinksDemo">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="links"/>
+        </methods>
+      </class> <!-- abc.LinksDemo -->
+      <class name="abc.AutocompleteDemo">
+        <methods>
+          <include name="autocomplete"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- abc.AutocompleteDemo -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [Suite] -->
